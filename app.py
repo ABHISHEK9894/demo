@@ -24,3 +24,9 @@ print(data.head())
 # Step 3: Save the manipulated data to a new csv file
 output_file = 'output_data_csv'
 data.to_csv(output_file, index=False)
+
+# Checkingn Data type
+print(data.dtypes)
+
+# Step 4: Lets calculate the meand and standard deviation of the numeric cokumn
+print(data.describe())
