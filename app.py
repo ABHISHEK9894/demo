@@ -24,3 +24,6 @@ print(data.head())
 # Step 3: Save the manipulated data to a new csv file
 output_file = 'output_data_csv'
 data.to_csv(output_file, index=False)
+
+# Checkingn Data type
+print(data.dtypes)
