@@ -38,3 +38,5 @@ print(data.isnull.sum())
 for col in data.columns:
     if data[col].isnull().any():
         data[col].fillna(f"Missing_{col}", inplace=True)
+
+print(data.head(5))
