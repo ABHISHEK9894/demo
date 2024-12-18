@@ -35,5 +35,6 @@ print(data.describe())
 print(data.isnull.sum())
 
 # Step 6: Replace the null with "NA"
-data.fillna("NA", inplace=True)
-data.head(5)
+for col in data.columns:
+    if data[col].isnull().any():
+        data[col].fillna(f"Missing_{col}", inplace=True)
