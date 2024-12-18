@@ -27,3 +27,6 @@ data.to_csv(output_file, index=False)
 
 # Checkingn Data type
 print(data.dtypes)
+
+# Step 4: Lets calculate the meand and standard deviation of the numeric cokumn
+print(data.describe())
