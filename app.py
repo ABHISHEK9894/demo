@@ -30,3 +30,10 @@ print(data.dtypes)
 
 # Step 4: Lets calculate the meand and standard deviation of the numeric cokumn
 print(data.describe())
+
+# Step 5: check for missing values
+print(data.isnull.sum())
+
+# Step 6: Replace the null with "NA"
+data.fillna("NA", inplace=True)
+data.head(5)
